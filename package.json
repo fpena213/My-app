@@ -1,0 +1,33 @@
+{
+	"name": "my-app",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"exports": {
+		".": "./src/lib/test.svelte"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.20.4",
+		"svelte": "^4.0.0",
+		"svelte-check": "^3.4.3",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.3.6"
+	},
+	"type": "module",
+	"dependencies": {
+		"@lucia-auth/oauth": "^1.2.1",
+		"@michaelb21/npmtest": "^1.0.0",
+		"@michaelb21/npmtestoauth": "^3.1.0",
+		"auth": "^0.0.9",
+		"google-auth-library": "^8.9.0",
+		"lucia": "^1.0.0"
+	}
+}
